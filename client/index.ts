@@ -1,4 +1,4 @@
-import { App, defineAsyncComponent, DefineComponent, h } from 'vue';
+import { App, defineAsyncComponent, DefineComponent, h } from 'vue-demi';
 
 export default function (app: App) {
 
