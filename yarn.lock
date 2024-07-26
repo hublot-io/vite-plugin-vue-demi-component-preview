@@ -212,7 +212,7 @@ __metadata:
   resolution: "@hublot-io/vite-plugin-vue-demi-component-preview@workspace:."
   dependencies:
     "@types/node": "npm:latest"
-    "@volar/vue-language-core": "npm:^1.0.24"
+    "@volar/vue-language-core": "npm:^1.6.5"
     magic-string: "npm:^0.27.0"
     typescript: "npm:latest"
     vite: "npm:latest"
@@ -517,7 +517,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@volar/vue-language-core@npm:^1.0.24":
+"@volar/vue-language-core@npm:^1.6.5":
   version: 1.6.5
   resolution: "@volar/vue-language-core@npm:1.6.5"
   dependencies:
