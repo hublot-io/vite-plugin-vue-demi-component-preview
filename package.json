@@ -1,14 +1,15 @@
 {
-	"name": "vite-plugin-vue-component-preview",
-	"version": "1.1.7",
+	"name": "@hublot-io/vite-plugin-vue-demi-component-preview",
+	"version": "1.1.25",
 	"license": "MIT",
+	"type": "module",
 	"files": [
 		"**/*.js",
 		"**/*.d.ts"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/johnsoncodehk/vite-plugin-vue-component-preview.git"
+		"url": "git+https://github.com/johnsoncodehk/vite-plugin-vue-component-preview.git"
 	},
 	"scripts": {
 		"prepublishOnly": "tsc -b"
@@ -17,14 +18,28 @@
 		"@types/node": "latest",
 		"typescript": "latest",
 		"vite": "latest",
-		"vue-demi": "latest"
+		"vue": "^2.7.0"
 	},
+	"peerDependenciesMeta": {
+		"@vue/composition-api": {
+		  "optional": true
+		}
+	  },
 	"dependencies": {
+		"vue-demi": "^0.14.8",
 		"@volar/vue-language-core": "^1.0.24",
 		"magic-string": "^0.27.0",
 		"vite-plugin-vue-markdown": "^0.22.4"
 	},
 	"peerDependencies": {
-		"vue-demi": ">=0.14.8"
-	}
+		"@vue/composition-api": "^1.0.0-rc.1",
+		"vue": "^2.0.0 || >=3.0.0"
+	},
+	"description": "This Vite plugin support `<preview lang=\"md\">` custom block in SFC for preview single Vue component.",
+	"main": "index.js",
+	"author": "",
+	"bugs": {
+		"url": "https://github.com/johnsoncodehk/vite-plugin-vue-component-preview/issues"
+	},
+	"homepage": "https://github.com/johnsoncodehk/vite-plugin-vue-component-preview#readme"
 }
