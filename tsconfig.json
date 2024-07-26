@@ -13,10 +13,7 @@
 		"strict": true,
 		"skipLibCheck": true,
 		"composite" : true,
-		"declaration": true,
-		"types": [
-			"vite/client",
-		]
+		"declaration": true
 	},
 	"include": [
 		"./index.ts",
