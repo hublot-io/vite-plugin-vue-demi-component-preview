@@ -1,4 +1,6 @@
+//@ts-ignore
 import * as vue from "vue-demi";
+//@ts-ignore
 import { DefineComponent } from 'vue-demi';
 
 const { h } = vue;
@@ -14,7 +16,7 @@ export default function (app) {
 
 		const importPath = location.pathname.replace('/__preview', '');
 		
-		
+			//@ts-ignore
 		if (import.meta.hot) {
 			fireHash();
 			window.addEventListener('hashchange', fireHash);
@@ -50,6 +52,7 @@ export default function (app) {
 		
 		function fireHash() {
 			try {
+					//@ts-ignore
 				import.meta.hot?.send('vue-component-preview:hash', {
 					file: importPath,
 					text: location.hash ? atob(location.hash.substring(1)) : '',
