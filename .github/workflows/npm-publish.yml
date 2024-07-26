@@ -4,6 +4,8 @@
 name: Node.js Package
 
 on: push
+env:
+    NODE_AUTH_TOKEN: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
