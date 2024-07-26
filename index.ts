@@ -1,7 +1,9 @@
 import * as fs from 'fs';
 import MagicString from 'magic-string';
 import * as path from 'path';
+//@ts-ignore
 import type { Plugin, ViteDevServer } from 'vite';
+//@ts-ignore
 import Markdown from 'vite-plugin-vue-markdown';
 
 export default function vuePreviewPlugin(): Plugin {
@@ -67,6 +69,7 @@ export default function vuePreviewPlugin(): Plugin {
 					str = str.overwrite(0, str.length(), fileHash[id].replace(previewBlockReg, ''));
 				}
 				else {
+					//@ts-ignore
 					str = str.replaceAll(previewBlockReg, '');
 				}
 			}
