@@ -10,13 +10,10 @@
 		"moduleResolution": "node",
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"strict": true,
+		"strict": false,
 		"skipLibCheck": true,
 		"composite" : true,
-		"declaration": true,
-		"types": [
-			"vite/client",
-		]
+		"declaration": true
 	},
 	"include": [
 		"./index.ts",
