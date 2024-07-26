@@ -1,3 +1,4 @@
+//@ts-ignore
 import { VueLanguagePlugin, VueFile, getDefaultVueLanguagePlugins } from '@volar/vue-language-core';
 
 const plugin: VueLanguagePlugin = (ctx) => {
