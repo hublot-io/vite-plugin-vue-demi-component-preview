@@ -1,6 +1,6 @@
 {
 	"name": "@hublot-io/vite-plugin-vue-demi-component-preview",
-	"version": "1.1.25",
+	"version": "1.1.26",
 	"license": "MIT",
 	"type": "module",
 	"files": [
@@ -22,14 +22,14 @@
 	},
 	"peerDependenciesMeta": {
 		"@vue/composition-api": {
-		  "optional": true
+			"optional": true
 		}
-	  },
+	},
 	"dependencies": {
-		"vue-demi": "^0.14.8",
 		"@volar/vue-language-core": "^1.0.24",
 		"magic-string": "^0.27.0",
-		"vite-plugin-vue-markdown": "^0.22.4"
+		"vite-plugin-vue-markdown": "^0.22.4",
+		"vue-demi": "^0.14.8"
 	},
 	"peerDependencies": {
 		"@vue/composition-api": "^1.0.0-rc.1",
