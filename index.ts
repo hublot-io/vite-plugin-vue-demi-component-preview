@@ -1,5 +1,8 @@
+//@ts-ignore
 import * as fs from 'fs';
+//@ts-ignore
 import MagicString from 'magic-string';
+//@ts-ignore
 import * as path from 'path';
 //@ts-ignore
 import type { Plugin, ViteDevServer } from 'vite';
