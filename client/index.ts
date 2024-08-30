@@ -8,7 +8,7 @@ const { isVue2 } = vue
 const defineAsyncComponent = vue.defineAsyncComponent;
 
 //@ts-ignore
-export default function (app) {
+export default function (app, workspace = '') {
 
 	const location = globalThis.location;
 
@@ -22,12 +22,10 @@ export default function (app) {
 			window.addEventListener('hashchange', fireHash);
 		}
 	
-
 		if(isVue2){
-			import(/* @vite-ignore */importPath).then(module => {
-				import(/* @vite-ignore */importPath + '__preview.vue').then(previewModule => {
+			import(/* @vite-ignore */importPath.replace(workspace, '')).then(module => {
+				import(/* @vite-ignore */importPath.replace(workspace, '') + '__preview.vue').then(previewModule => {
 					const componentName = importPath.split("/")
-
 					app.component = {
 						[componentName[componentName.length-1].split(".")[0]] : module.default,
 						'PreviewComponent': previewModule.default

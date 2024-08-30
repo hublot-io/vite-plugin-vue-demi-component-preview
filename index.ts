@@ -19,7 +19,7 @@ export default function vuePreviewPlugin(): Plugin {
 	let currentProxyHotUpdateFile: string | undefined;
 
 	return {
-		name: 'vite-plugin-vue-component-preview',
+		name: '@hublot-io/vite-plugin-vue-demi-component-preview',
 		configureServer(_server) {
 			server = _server;
 			server.middlewares.use((req, res, next) => {
